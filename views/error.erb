@@ -1,0 +1,25 @@
+<html>
+  <head></head>
+  <body>
+	
+	<% if @invalid_param %>
+	<h1>    ERROR    </h1>
+    <h2>      Invalid Parameters.      </h2>
+      <h2>			Please enter:      </h2>
+      <p>
+	1. A single-character true symbol
+	<br>
+	2. A single-character false symbol
+	<br>
+	3. A size greater than or equal to 2
+	<br>
+	4. Different characters for the true and false symbols.
+      </p>
+    <a href="/">Back to main page</a>
+	<% else %>
+		<h1>    ERROR    </h1>
+    <h2>      Invalid Address.    </h2>
+		 <a href="/">Back to main page</a>
+		<% end %>
+  </body>
+</html>
